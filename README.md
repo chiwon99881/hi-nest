@@ -33,3 +33,9 @@
   ```
 
 - #05 App Module
+
+- #06 Unit Test
+
+  ```bash
+  npm run test:watch
+  ```

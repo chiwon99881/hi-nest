@@ -15,4 +15,27 @@ describe('MoviesService', () => {
   it('should be defined', () => {
     expect(service).toBeDefined();
   });
+
+  describe("getAll", () => {
+    
+    it("should be return an array", () => {
+        const result = service.getAll();
+
+        expect(result).toBeInstanceOf(Array);
+    })
+  })
+
+  describe("getOne", () => {
+    it("should be a movie", () => {
+      service.create({
+        title: "Unit Test movie",
+        year: 2020,
+        genres: ["action"]
+      })
+      const movie = service.getOne(1)
+      expect(movie).toBeDefined()
+    })
+  })
+
+
 });
