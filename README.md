@@ -12,6 +12,7 @@
 
   ```bash
   nest generate controller
+
   nest generate service
   ```
 
@@ -19,5 +20,12 @@
 
   ```bash
   npm i class-validator
+
   npm i class-transformer
+  ```
+
+- #04 DTO with Validation 2
+
+  ```bash
+  npm i @nestjs/mapped-types
   ```

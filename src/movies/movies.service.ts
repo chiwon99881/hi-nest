@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { CreateMovieDto } from './dto/create-movie.dto';
+import { UpdateMovieDto } from './dto/update-movie.dto';
 import { Movie } from './entities/movie.entitiy';
 
 @Injectable()
@@ -23,6 +24,15 @@ export class MoviesService {
         this.movies.push({
             id: this.movies.length + 1,
             ...movieData
+        })
+    }
+
+    updateMovie(id: number, updateData: UpdateMovieDto) {
+        const movie = this.movies.find(movie => movie.id === id)
+        this.deleteMovie(id)
+        this.movies.push({
+            ...movie,
+            ...updateData
         })
     }
 }
