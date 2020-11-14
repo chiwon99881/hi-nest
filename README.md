@@ -14,3 +14,10 @@
   nest generate controller
   nest generate service
   ```
+
+- #03 DTO with Validation
+
+  ```bash
+  npm i class-validator
+  npm i class-transformer
+  ```
