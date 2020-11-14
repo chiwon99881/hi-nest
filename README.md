@@ -28,4 +28,8 @@
 
   ```bash
   npm i @nestjs/mapped-types
+
+  PartialType()
   ```
+
+- #05 App Module
