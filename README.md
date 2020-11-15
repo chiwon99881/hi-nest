@@ -39,3 +39,5 @@
   ```bash
   npm run test:watch
   ```
+
+- #07 Unit Test Done
