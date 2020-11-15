@@ -48,7 +48,14 @@ describe('AppController (e2e)', () => {
     it('GET 404', () => {
       return request(app.getHttpServer()).get('/movies/1429').expect(404);
     });
-    it.todo('DELETE');
-    it.todo('PATCH');
+    it('PATCH', () => {
+      return request(app.getHttpServer())
+        .get('/movies/1')
+        .send({ title: 'Updated' })
+        .expect(200);
+    });
+    it('DELETE', () => {
+      return request(app.getHttpServer()).get('/movies/1').expect(200);
+    });
   });
 });
