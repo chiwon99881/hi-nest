@@ -2,5 +2,7 @@
   "singleQuote": true,
   "trailingComma": "all",
   "endOfLine": "lf",
-  "embeddedLanguageFormatting": "auto"
+  "embeddedLanguageFormatting": "auto",
+  "semi": true,
+  "printWidth": 80
 }

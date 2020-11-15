@@ -41,3 +41,9 @@
   ```
 
 - #07 Unit Test Done
+
+- #08 E2E Test (End to End)
+
+  ```bash
+  npm run test:e2e
+  ```
